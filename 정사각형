@@ -1,0 +1,39 @@
+import math
+import time
+import os
+import numpy as up
+
+A = B = C = 0
+cube_wideths = [20,10,5]
+horizontal_offsets = {-40, 10, 40}
+width, height = 160, 44
+background_ascii_code = '.'
+distance_from_cam = 100
+K1 = 40
+increment_speeed = 0.9
+
+def calculate_x(i,j,k,A,B,C):
+return (j * math.sin(A) * math.sin(B) * math.cos(C) -
+        k * math.cos(A) * math.sin(B) * math.cos(C) +
+        j * math.cos(A) * math.sin(C) +
+        k * math.sin(A) * math.sin(C) +
+        i * math.cos(B) * math.cos(C))
+def calculate_y(i,j,k,A,B,C):
+    return (j * math.cos(A) * math.cos(C) +
+            k * math.sin(A) * math.cos(C) -
+            j * math.sin(A) * math.sin(B) * math.sin(C) +
+            k * math.cos(A) * math.sin(B) * math.sin(C) -
+            i * math.cos(B) * math.sin(C))
+
+def calculate_z(i, j, k, A, B, C)
+    return (k *,cos(A) * math.cos(B) -
+            j * math.sin(A) *math.cos(B) +
+            i * math.sin(B))
+
+def calculate_for_surface(cubeX, cubeY, cubeZ, ch, A, B, C, buffer, z_buffer, horizontal_offset) :
+    x = calculate_x(cubeX, cubeY, cubeZ, A, B, C)
+    y = calculate_x(cubeX, cubeY, cubeZ, A, B, C)
+    z = calculate_x(cubeX, cubeY, cubeZ, A, B, C)
+    ooz = 1 / z
+    xp = int(width / 2 + horizontal_offset + K1 * ooz * x * 2)
+    yp = int(height / 2 + K1 * ooz * y)
