@@ -1,0 +1,35 @@
+"""
+print("\    /\ ")
+print(" )  ( ')")
+print('(  /  )')
+print(" \(__)|")
+"""
+'''
+print("|\_/|")
+print("|q p|   /}")
+print('( 0 )"""\ ')
+print('|"^"`    |')
+print("||_/=\\\__|")
+
+
+a, b, c = map(int, input().split())
+print((a + b)%c)
+print(((a%c) + (b%c))%c)
+print((a * b)%c)
+print((a%c) * (b%c)%c)
+
+A, B, C = map(int, input().split())
+print(A + B + C)
+'''
+"""
+a = int(input())
+b = int(input())
+o = t = h = 0
+o = b % 10
+t = b % 100 // 10
+h = b// 100
+print(a*o)
+print(a*t)
+print(a*h)
+print(a*b)
+"""
