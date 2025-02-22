@@ -1,0 +1,45 @@
+"""
+import random
+
+a = int(input())
+b = random.randrange(1, 100)
+if a == b:
+    print('맞았습니다')
+if a != b:
+    print('틀렸습니다')
+print('당신의 값:', a)
+print('결정된 갑:', b)
+
+
+x = 5
+
+if x != 10:
+    print('ok')
+
+x = int(input())
+if x % 2 == 1:
+    print('홀수')
+elif x == 0:
+    print('0입니다')
+else:
+    print('짝수1')
+
+
+dic = {"메로나": 1000, "폴로포": 1200, "빵빠레": 1800}
+dic["죠스바"] = 1200
+dic["월드콘"] = 1800
+dic["메로나"] = 1300
+del dic['메로나']
+print(dic)
+
+
+inventory = {'메로나': [300,20],'비비빅': [400,3], '죠스바': [250,100]}
+inventory['월드콘'] = [500,7]
+inventory = list(inventory.values())
+print(inventory)
+
+
+icecream = {'탱크보이': 1200,'폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+icecream = list(icecream.values())
+print(sum(icecream))
+"""
