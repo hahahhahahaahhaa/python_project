@@ -1,0 +1,64 @@
+"""
+a = int(input())
+
+b = a - 20
+
+
+if b < 0:
+    print(0)
+elif b > 255:
+    print(255)
+else:
+    print(b)
+
+a = int(input())
+if a % 2 == 0:
+    print("홀수")
+elif a % 2 == 1:
+    print("짝수")
+elif:
+    print(0)
+"""
+'''
+a, b = map(int, input().split())
+if a > b:
+    print(">")
+elif a < b:
+    print("<")
+else:
+    print("==")
+
+#시험 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.
+x = int(input())
+x >= 0
+x <= 100
+if x >= 90:
+    print("A")
+elif x >= 80:
+    print("B")
+elif x >= 70:
+    print("C")
+elif x >= 60:
+    print("D")
+else:
+    print("F")
+'''
+"""
+year = int(input())
+if year % 4 != 0:
+    print(0)
+elif year % 100 == 0 and year % 400 != 0:
+    print(0)
+else:
+    print(1)
+
+h, m = map(int, input().split())
+m += h*60 - 45
+if m < 0:
+    h = 23
+    m += 60
+else:
+    h = m // 60
+    m %= 60
+    print(h, m)
+"""
