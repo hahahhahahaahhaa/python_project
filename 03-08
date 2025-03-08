@@ -1,0 +1,28 @@
+#(int(a[0]) * 2)
+
+"""
+a = int(input())
+b = a - 20
+
+if b < 0:
+    print(0)
+elif b > 255:
+    print(255)
+else:
+    print(b)
+
+
+import random
+
+a = [_ for _ in range(1, 46)]
+b = random.sample(a, 6)
+b.sort()
+cnt = 1
+my_num = list(map(int, input().split()))
+my_num.sort()
+while b != my_num:
+    b = random.sample(a, 6)
+    b.sort()
+    cnt += 1
+    print(cnt)
+"""
