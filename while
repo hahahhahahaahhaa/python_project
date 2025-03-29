@@ -1,0 +1,18 @@
+"""
+a,b=map(int,input().split())
+while a != 0:
+    print(a + b)
+    a, b = map(int, input().split())
+
+import random
+print(random.seed(1234))
+print(random.random())
+
+n = int(input())
+
+temp = [0, 1]
+for i in range(n-1):
+    temp.append(temp[-1]+temp[-2])
+
+print(temp[n])
+"""
